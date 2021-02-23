@@ -1,0 +1,26 @@
+HTTrack3.49-2 launched on Tue, 23 Feb 2021 22:07:53 at http://getnajmul.com/theme/cryptonio/index-02.html
+(httrack http://getnajmul.com/theme/cryptonio/index-02.html )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:07:53	Warning: 	Cache: damaged cache, trying to repair
+22:07:53	Warning: 	Cache: 75242 bytes successfully recovered in 40 entries
+22:07:53	Warning: 	Note: due to getnajmul.com remote robots.txt rules, links beginning with these path will be forbidden: /wp-admin/ (see in the options to disable this)
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/bootstrap.min.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/font-awesome.min.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/fonts/flaticon/flaticon.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/magnific-popup.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/jquery.countdown.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/animate.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/owl.carousel.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/owl.theme.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/assets/preloader.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/style.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/cryptonio.css.tmp already exists
+22:07:54	Warning: 	engine: warning: temporary file getnajmul.com/theme/cryptonio/css/responsive.css.tmp already exists
+
+HTTrack Website Copier/3.49-2 mirror complete in 2 minutes 54 seconds : 98 links scanned, 97 files written (5059332 bytes overall), 58 files updated [3929146 bytes received at 22581 bytes/sec], 5.5 requests per connection
+(No errors, 15 warnings, 0 messages)
