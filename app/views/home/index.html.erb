@@ -5,11 +5,10 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
-    <meta name="description" content="Cryptocurrency Landing Page HTML5 Template">
+    <meta name="description" content="Fxvest Landing Page">
     <meta name="keywords" content="Cryptocurrency, bitcoin, bitcoin landing, blockchain, crypto trading ">
     <meta name="author" content="Getnajmul">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cryptonio - Bitcoin ICO Cryptocurrency Landing Page HTML Template</title>
     <link rel="shortcut icon" href="fxvest/images/favicon.ico" type="image/x-icon">
     <!-- Goole Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
@@ -57,10 +56,6 @@
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a data-scroll href="#header-01" class="nav-link active">Home</a></li>
                     <li class="nav-item"><a data-scroll href="#about_cryptonic_01" class="nav-link">About</a></li>
-                    <li class="nav-item"><a data-scroll href="#token_sale_01" class="nav-link">Token Sale</a></li>
-                    <li class="nav-item"><a data-scroll href="#roadmap_01" class="nav-link">Roadmap</a></li>
-                    <li class="nav-item"><a data-scroll href="#team_membar_01" class="nav-link">Team</a></li>                    
-                    <li class="nav-item"><a data-scroll href="#faq-area-01" class="nav-link">Faq</a></li>
                     <li class="nav-item"><a data-scroll href="#subscribe_area_01" class="nav-link">Contact</a></li>
                 </ul>
             </div>
@@ -89,7 +84,10 @@
                 <div class="intro-text">
                     <h1>Africa's first RISK-FREE trader</h1>
                     <p>We take the risks, you get your steady 20% daily profits.</p>
-                    <a href="#" class="btn btn-default btn-default-style">Join our Whitelist</a>
+                    <% if signed_out? %>
+                      <%= link_to 'Get Started Today', sign_up_path, class:'btn btn-default btn-default-style' %>
+                    <% end %>
+                    
                 </div>
             </div> 
         </div>    
@@ -109,7 +107,7 @@
                     </p>
 
                     <p class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".5s">You do not need any previous trading experience to become our partner. Create an account with us today and start earning everyday.</p>
-                    <a href="#" class="btn btn-default btn-default-style wow fadeInUp" data-animate="fadeInUp" data-delay=".5s">Download Whitepaper</a>
+                    <a href="#" class="btn btn-default btn-default-style wow fadeInUp" data-animate="fadeInUp" data-delay=".5s">Get Started Today</a>
                 </div>
             </div>
             <div class="col-sm-12 col-md-5 col-lg-7">
@@ -131,7 +129,7 @@
             <div class="col-sm-12">
                 <div class="sub-title">
                     <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Benefits of Using Our Solution</h2>
-                    <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">You do not need any previous trading experience to become our partner. Fund your account today and start earning daily<br> NRM assistant will instantly analyze user data use.</p>
+                    <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">You do not need any previous trading experience to become our partner. Fund your account today and start earning daily .</p>
                 </div>
             </div>
         </div>
