@@ -51,7 +51,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="index-02.html"><img src="fxvest/images/logo.png" alt="logo"></a>
+            <a class="navbar-brand" href="/"><img src="fxvest/images/fxlogo.jpeg" alt="logo"></a>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
@@ -64,9 +64,14 @@
                     <li class="nav-item"><a data-scroll href="#subscribe_area_01" class="nav-link">Contact</a></li>
                 </ul>
             </div>
+
             <div class="language">
-                <a href="#" class="token active">Sign Up</a>
-                <a href="#" class="token">Login</a>
+            <% if signed_in? %> 
+                <%= button_to 'Sign out', sign_out_path, method: :delete, class:'token' %>
+                <% else %>
+                <%= link_to 'Login', sign_in_path, class:'token active' %>
+                <%= link_to 'Sign Up', sign_up_path, class:'token active' %>
+                <% end %>
             </div>
         </div>
     </nav><!-- END NAVBAR -->
@@ -82,8 +87,8 @@
             </div>                
             <div class="col-sm-12  col-md-12 col-lg-6 intro-text-wrapper">
                 <div class="intro-text">
-                    <h1>Crypto currency is a Digital asset design To work.</h1>
-                    <p>Collaboratively engineer impactful niches for business dramatically crossunit.</p>
+                    <h1>Africa's first RISK-FREE trader</h1>
+                    <p>We take the risks, you get your steady 20% daily profits.</p>
                     <a href="#" class="btn btn-default btn-default-style">Join our Whitelist</a>
                 </div>
             </div> 
@@ -97,11 +102,13 @@
         <div class="row">        
             <div class="col-sm-12 col-md-7 col-lg-5 padding-none">
                 <div class="about_cryptonic-content">
-                    <h6 class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".2s">About Cryptonic</h6>
-                    <h2 class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".3s">Cryptonio Theme is The Best for your ICO</h2>
-                    <p class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".4s">Artificial intelligence based on neural networks, built using the newest algorithms for self-learning, analysis and comparison of neurons in which will be self-corrected, based on the history of success and failure, taking into account the correlation of the objects of analysis.</p>
+                    <h6 class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".2s">About Fxvest</h6>
+                    <h2 class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".3s">Fxvest is one of the Best trading platforms</h2>
+                    <p class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".4s">
+                    Fxvest is Africa's first RISK-FREE trader. It was founded by GABBS VENTURES, a major Nigerian forex trader. He was the director of the Forex trading company, Bear Run Investments. Later in 2018, he founded Fxvest. Since 2018, Fxvest holds a reputable record of successful trades.
+                    </p>
 
-                    <p class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".5s">Due to the use of large computing power and artificial based on the neural network, the NRM assistant will instantly analyze user data and offer solutions for their further use.</p>
+                    <p class=" wow fadeInUp" data-animate="fadeInUp" data-delay=".5s">You do not need any previous trading experience to become our partner. Create an account with us today and start earning everyday.</p>
                     <a href="#" class="btn btn-default btn-default-style wow fadeInUp" data-animate="fadeInUp" data-delay=".5s">Download Whitepaper</a>
                 </div>
             </div>
@@ -124,7 +131,7 @@
             <div class="col-sm-12">
                 <div class="sub-title">
                     <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Benefits of Using Our Solution</h2>
-                    <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">Due to the use of large computing power and artificial based on the neural network, the<br> NRM assistant will instantly analyze user data use.</p>
+                    <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">You do not need any previous trading experience to become our partner. Fund your account today and start earning daily<br> NRM assistant will instantly analyze user data use.</p>
                 </div>
             </div>
         </div>
@@ -311,11 +318,11 @@
                         <div class="distribution_details">
                            <h3>Token</h3>
                            <div class="token_shape">
-                                <span class="shape1 header-shape"><img src="images/shape/home_6/token_1.png" alt=""></span>
-                                <span class="shape2 header-shape"><img src="images/shape/home_6/token_2.png" alt=""></span>
-                                <span class="shape1 header-shape"><img src="images/shape/home_6/token_3.png" alt=""></span>
-                                <span class="shape2 header-shape"><img src="images/shape/home_6/token_4.png" alt=""></span>
-                                <span class="shape1 header-shape"><img src="images/shape/home_6/token_5.png" alt=""></span>  
+                                <span class="shape1 header-shape"><img src="fxvest/images/shape/home_6/token_1.png" alt=""></span>
+                                <span class="shape2 header-shape"><img src="fxvest/images/shape/home_6/token_2.png" alt=""></span>
+                                <span class="shape1 header-shape"><img src="fxvest/images/shape/home_6/token_3.png" alt=""></span>
+                                <span class="shape2 header-shape"><img src="fxvest/images/shape/home_6/token_4.png" alt=""></span>
+                                <span class="shape1 header-shape"><img src="fxvest/images/shape/home_6/token_5.png" alt=""></span>  
                            </div>   
                        </div> 
                        <ul class="details_content">
@@ -365,11 +372,11 @@
                         <div class="distribution_details">
                            <h3>Sale</h3>
                            <div class="token_shape">
-                                <span class="shape1 header-shape"><img src="images/shape/home_6/token_1.png" alt=""></span>
-                                <span class="shape2 header-shape"><img src="images/shape/home_6/token_2.png" alt=""></span>
-                                <span class="shape3 header-shape"><img src="images/shape/home_6/token_3.png" alt=""></span>
-                                <span class="shape4 header-shape"><img src="images/shape/home_6/token_4.png" alt=""></span>
-                                <span class="shape5 header-shape"><img src="images/shape/home_6/token_5.png" alt=""></span>  
+                                <span class="shape1 header-shape"><img src="fxvest/images/shape/home_6/token_1.png" alt=""></span>
+                                <span class="shape2 header-shape"><img src="fxvest/images/shape/home_6/token_2.png" alt=""></span>
+                                <span class="shape3 header-shape"><img src="fxvest/images/shape/home_6/token_3.png" alt=""></span>
+                                <span class="shape4 header-shape"><img src="fxvest/images/shape/home_6/token_4.png" alt=""></span>
+                                <span class="shape5 header-shape"><img src="fxvest/images/shape/home_6/token_5.png" alt=""></span>  
                            </div>
                        </div> 
                        <ul class="details_content">
@@ -412,7 +419,7 @@
         <div class="row">        
             <div class="col-sm-12">
                 <div class="sub-title">
-                    <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Cryptonio Roadmap</h2>
+                    <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Fxvest Roadmap</h2>
                     <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">Due to the use of large computing power and artificial instantly analyze user data and offer solutions for their further use.</p>
                 </div>
             </div>
@@ -482,14 +489,14 @@
                         <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">Supported by</h2>
                     </div>
                     <ul  class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".4s">
-                        <li><img src="images/logos/partner6-1.png" alt=""></li>
-                        <li><img src="images/logos/partner6-2.png" alt=""></li>
-                        <li><img src="images/logos/partner6-3.png" alt=""></li>
-                        <li><img src="images/logos/partner6-4.png" alt=""></li>
-                        <li><img src="images/logos/partner6-5.png" alt=""></li>                       
-                        <li><img src="images/logos/partner6-6.png" alt=""></li>
-                        <li><img src="images/logos/partner6-7.png" alt=""></li>
-                        <li><img src="images/logos/partner6-8.png" alt=""></li>
+                        <li><img src="fxvest/images/logos/partner6-1.png" alt=""></li>
+                        <li><img src="fxvest/images/logos/partner6-2.png" alt=""></li>
+                        <li><img src="fxvest/images/logos/partner6-3.png" alt=""></li>
+                        <li><img src="fxvest/images/logos/partner6-4.png" alt=""></li>
+                        <li><img src="fxvest/images/logos/partner6-5.png" alt=""></li>                       
+                        <li><img src="fxvest/images/logos/partner6-6.png" alt=""></li>
+                        <li><img src="fxvest/images/logos/partner6-7.png" alt=""></li>
+                        <li><img src="fxvest/images/logos/partner6-8.png" alt=""></li>
                     </ul>  
                 </div>
             </div>                  
@@ -499,310 +506,7 @@
 
 
 
-<section id="team_membar_01" class="team_membar">
-    <div class="container">
-        <div class="row">        
-            <div class="col-sm-12">
-                <div class="sub-title">
-                    <h2 class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">Our Team</h2>
-                    <p class=" wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">Artificial based on the neural network, the NRM assistant will instantly analyze user data use.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="team_01" class="owlCarousel">
-                    <div class="single-wrapper">
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-01.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Ariyan Rovert</h4>
-                                        <span>Founder</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>                        
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-01.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Ariyan Rovert</h4>
-                                        <span>Founder</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <div class="single-wrapper">
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-02.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>David Martin</h4>
-                                        <span>Founder</span>
-                                    </div>                            
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-02.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>David Martin</h4>
-                                        <span>Founder</span>
-                                    </div> 
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <div class="single-wrapper">
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-03.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Reena Scot</h4>
-                                        <span>Founder</span>
-                                    </div> 
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-03.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Reena Scot</h4>
-                                        <span>Founder</span>
-                                    </div> 
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <div class="single-wrapper">
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-04.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Paul Smith</h4>
-                                        <span>Founder</span>
-                                    </div> 
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-04.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Paul Smith</h4>
-                                        <span>Founder</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
 
-                    <div class="single-wrapper">
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-01.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Ariyan Rovert</h4>
-                                        <span>Founder</span>
-                                    </div> 
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-01.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Ariyan Rovert</h4>
-                                        <span>Founder</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <div class="single-wrapper">
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-02.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>David Martin</h4>
-                                        <span>Founder</span>
-                                    </div>  
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-02.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>David Martin</h4>
-                                        <span>Founder</span>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    
-                    <div class="single-wrapper">
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".2s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-03.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Reena Scot</h4>
-                                        <span>Founder</span>
-                                    </div>  
-                                </figcaption>
-                            </figure>
-                        </div>
-                        <div class="team-single-item wow fadeInUp" data-wow-duration="2s" data-wow-delay=".3s">
-                            <figure>
-                                <div class="member-img">
-                                    <img src="fxvest/images/team/team-03.jpg" alt="member img" class="img-fluid">
-                                </div>
-                                <figcaption>
-                                    <ul class="social-links list-unstyled">
-                                        <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        <li class="nav-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                    </ul>
-                                    <div class="member-name">
-                                        <h4>Reena Scot</h4>
-                                        <span>Founder</span>
-                                    </div> 
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-    </div>
-</section>
 
 
 <section id="faq-area-01" class="faq-area">
@@ -829,13 +533,14 @@
                             <div class="panel-heading" role="tab" id="headingTwo">
                                 <h4 class="panel-title">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                      What cryptocurrencies can I use to purchase? 
+                                      How does Fxvest really works? 
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                                 <div class="card-body  accordion-content">
-                                    <p>Artificial intelligence based on neural networks, built using the newest algorithms for self learning, analysis and comparison of neurons in which will be self-corrected, based on the history.</p>
+                                    <p>Fxvest completes your trade and pays out a profit of up to 20% daily and/or an accumulated equivalent weekly.
+</p>
                                 </div>
                             </div>
                         </div>
@@ -843,13 +548,13 @@
                             <div class="panel-heading" role="tab" id="headingOne">
                                 <h4 class="panel-title">
                                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        How do I benefit from the ICO Token? 
+                                        What Do We Do? 
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse  in show" role="tabpanel" aria-labelledby="headingOne">
                                 <div class="card-body  accordion-content">
-                                    <p>Artificial intelligence based on neural networks, built using the newest algorithms for self learning, analysis and comparison of neurons in which will be self-corrected, based on the history.</p>
+                                    <p>We trade with forex using strong signal. Our investors funds are 100% secured and insured. We have perfected our 0% loss trades and our payouts are prompt.</p>
                                 </div>
                             </div>
                         </div>
@@ -857,14 +562,15 @@
                             <div class="panel-heading" role="tab" id="headingThree">
                                 <h4 class="panel-title">
                                     <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        To Keep Makeup Looking Fresh Take A Powder 
+                                        How Do I Withdraw? 
                                     </a>
                                 </h4>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                              <div class="card-body  accordion-content">
-                                    <p>Artificial intelligence based on neural networks, built using the newest algorithms for self learning, analysis and comparison of neurons in which will be self-corrected, based on the history.</p>
-                                </div>
+                               <div class="card-body  accordion-content">
+                                    <p>PROFITS ARE AUTOMATICALLY PAID OUT.
+                                    Depending on your choice during registration, profits are accumulated and paid out daily (every 24hrs) or weekly (everg Friday) into your preferred bank account.</p>
+                               </div>
                             </div>
                         </div>                        
                         <div class="panel accordion-single accordion-04 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".5s">
@@ -920,7 +626,7 @@
             <div class="col-md-12 col-lg-12">
                 <div class="footer_items">
                     <div class="footer-single-col footer_single_list_1">
-                        <h3 class="subtitle_1">&nbsp;<img src="images/logo.png" alt=""></h3>
+                        <h3 class="subtitle_1">&nbsp;<img src="fxvest/images/fxlogo.jpeg" alt=""></h3>
                         <p>All of our website templates are offered as is, we do not offer any guarantee or warranty website templates are offered as is, we do not offer or warranty.</p>
                     </div>
 
@@ -958,7 +664,7 @@
         </div>
 
         <div class="copyright">
-            <p> Copyright &copy; 2018, Designed By <span>Ecology Theme</span></p>        
+            <p> Copyright &copy; 2021, <span>  Fxvest</span></p>        
             <ul class="social-links list-unstyled">
                 <li class="nav-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                 <li class="nav-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
