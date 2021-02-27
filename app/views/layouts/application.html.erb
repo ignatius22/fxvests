@@ -7,15 +7,35 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+
+
   </head>
 
   <body>
+  
+<%= render  "layouts/header" %>
+
     <div id="flash">
       <% flash.each do |key, value| %>
         <div class="flash <%= key %>"><%= value %></div>
       <% end %>
     </div>
     <%= yield %>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+      
+         $('.slick-slider').slick({
+           autoplaySpeed: 5000,
+           autoplay: true,
+           prevArrow: false,
+           nextArrow: false
+         });
+    </script>
   </body>
 </html>

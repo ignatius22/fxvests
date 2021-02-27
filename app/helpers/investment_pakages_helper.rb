@@ -1,0 +1,2 @@
+module InvestmentPakagesHelper
+end
