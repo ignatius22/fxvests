@@ -52,73 +52,306 @@
 </section>
 
 <section class="home-advantage">
-        <div class="title">
-            <h2>
-                Our <span>advantages</span>            </h2>
-            <p>
-                                    Investing through our company you get the maximum <br>
-                    profit, this became possible for several reasons
-                            </p>
+   <div class="title">
+    <h2>
+        Our <span>advantages</span>
+    </h2>
+      <p>
+       Investing through our company you get the maximum <br>
+       profit, this became possible for several reasons
+      </p>
+    </div>
+    <div class="list">
+        <div class="list-item">
+            <div class="info ico1">
+                <span></span>
+                <h3>Security</h3>
+                <p>
+                    We guarantee safety of your personal data. Our technicians are under development of new security technologies every day to
+                    keep the reliability level of our service
+                </p>
+            </div>
         </div>
-        <div class="list">
-            <div class="list-item">
-                <div class="info ico1">
-                    <span></span>
-                    <h3>Security</h3>
-                    <p>
-                                                    We guarantee safety of your personal data. Our technicians are under development of new security technologies every day to
-                            keep the reliability level of our service
-                                            </p>
-                </div>
+        <div class="list-item">
+            <div class="info ico2">
+                <span></span>
+                <h3>Detailed Statistics</h3>
+                <p>
+                    You are able to see full and detailed statistics of investment process directly at your personal cabinet
+                </p>
             </div>
-            <div class="list-item">
-                <div class="info ico2">
-                    <span></span>
-                    <h3>Detailed Statistics</h3>
-                    <p>
-                                                    You are able to see full and detailed statistics of investment process directly at your personal cabinet
-                                            </p>
-                </div>
+        </div>
+        <div class="list-item">
+            <div class="info ico3">
+                <span></span>
+                <h3>Wide range of Plans</h3>
+                <p>
+                    We are sure, that you will find suitable plan for yourself, as we always try to take into account the price wishes of our
+                    clients
+                </p>
             </div>
-            <div class="list-item">
-                <div class="info ico3">
-                    <span></span>
-                    <h3>Wide range of Plans</h3>
-                    <p>
-                                                    We are sure, that you will find suitable plan for yourself, as we always try to take into account the price wishes of our
-                            clients
-                                            </p>
-                </div>
+        </div>
+        <div class="list-item">
+            <div class="info ico4">
+                <span></span>
+                <h3>Team of Experts</h3>
+                <p>
+                    Our team consists of professional technicians, programmers and managers.
+                    Also, our support team always happy to answer all your questions trough email
+                </p>
             </div>
-            <div class="list-item">
-                <div class="info ico4">
-                    <span></span>
-                    <h3>Team of Experts</h3>
-                    <p>
-                                                    Our team consists of professional technicians, programmers and managers.
-                            Also, our support team always happy to answer all your questions trough email
-                                            </p>
-                </div>
+        </div>
+        <div class="list-item">
+            <div class="info ico5">
+                <span></span>
+                <h3>Instant Payouts</h3>
+                <p>
+                    Instant payouts everywhere at every time.
+                    Withdraw your income only when you decide
+                </p>
             </div>
-            <div class="list-item">
-                <div class="info ico5">
-                    <span></span>
-                    <h3>Instant Payouts</h3>
-                    <p>
-                                                    Instant payouts everywhere at every time.
-                            Withdraw your income only when you decide
-                                            </p>
-                </div>
+        </div>
+        <div class="list-item">
+            <div class="info ico6">
+                <span></span>
+                <h3>Without Mediators</h3>
+                <p>
+                    No intermediary. Only you and our service.
+                    Don’t worry about unclear plans or additional costs
+                </p>
             </div>
-            <div class="list-item">
-                <div class="info ico6">
-                    <span></span>
-                    <h3>Without Mediators</h3>
-                    <p>
-                                                    No intermediary. Only you and our service.
-                            Don’t worry about unclear plans or additional costs
-                                            </p>
+        </div>
+    </div>
+</section>
+
+<section class="calc-body">
+        <div class="calc-content">
+            <div class="title">
+                <h2>
+                    <span>Profitability</span> calculator                </h2>
+
+                <p>
+                    Calculate how much you can earn with Fxvests            </p>
+            </div>
+            <div class="calc-form">
+                <style>
+    .info-section b {
+        font-weight: normal;
+    }
+
+    .calc-form form > div.info-section > div.item {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 1 350px;
+        flex: 0 1 350px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+</style>
+
+<form id="calcForm" action="#">
+    <div class="select-month">
+        <p>Select investment term:</p>
+        <div class="list-month">
+                            <input onchange="setTerm(60)" class="month-change" name="month" type="radio" id="month60" value="60">
+                <label for="month60">2 month</label>
+                            <input onchange="setTerm(120)" class="month-change" name="month" type="radio" id="month120" value="120">
+                <label for="month120">4 month</label>
+                            <input onchange="setTerm(180)" class="month-change" name="month" type="radio" id="month180" value="180">
+                <label for="month180">6 month</label>
+                    </div>
+    </div>
+    <div class="price-section">
+        <p>Investment amount:</p>
+        <div class="field-data">
+                            <input onchange="setPrice(10)" class="price-change" name="price" type="radio" id="price10" value="10">
+                <label for="price10">10 $</label>
+                            <input onchange="setPrice(50)" class="price-change" name="price" type="radio" id="price50" value="50">
+                <label for="price50">50 $</label>
+                            <input onchange="setPrice(100)" class="price-change" name="price" type="radio" id="price100" value="100">
+                <label for="price100">100 $</label>
+                            <input onchange="setPrice(500)" class="price-change" name="price" type="radio" id="price500" value="500">
+                <label for="price500">500 $</label>
+                            <input onchange="setPrice(1000)" class="price-change" name="price" type="radio" id="price1000" value="1000">
+                <label for="price1000">1000 $</label>
+                            <input onchange="setPrice(2500)" class="price-change" name="price" type="radio" id="price2500" value="2500">
+                <label for="price2500">2500 $</label>
+                            <input onchange="setPrice(5000)" class="price-change" name="price" type="radio" id="price5000" value="5000">
+                <label for="price5000">5000 $</label>
+                            <input onchange="setPrice(10000)" class="price-change" name="price" type="radio" id="price10000" value="10000">
+                <label for="price10000">10000 $</label>
+                    </div>
+    </div>
+    <div class="info-section">
+        <div class="item gold">
+            <span>Profit:</span>
+            <p><b id="Profit">+ 0</b> <span>USD</span></p>
+        </div>
+        <div class="item">
+            <span>Total amount:</span>
+            <p><b id="TotalAmount">+ 0</b> <span>USD</span></p>
+        </div>
+        <div class="item">
+            <span>In percentages:</span>
+            <p><b id="InPercentages">0 %</b></p>
+        </div>
+        
+    </div>
+    <div class="send-data">
+        <button type="submit"><span>Invest now</span></button>
+    </div>
+</form>
+
+  <script>
+
+        terms = {"60":30,"120":45,"180":60};
+        let term = 0;
+        let price = 0;
+
+        function setPrice(val = 0) {
+            price = val;
+            calc()
+        }
+
+        function setTerm(val = 0) {
+            term = val;
+            calc()
+        }
+
+        function calc() {
+            if (term != 0 && price != 0) {
+                let backpay = terms[term];
+                let profitDays = price / backpay;
+                let totalAmount = profitDays * term;
+                let profit = totalAmount - price;
+                $('#Profit').html('+ ' + profit.toFixed(2));
+                $('#TotalAmount').html('+ ' + totalAmount.toFixed(2));
+                let InPercentages = totalAmount.toFixed(2) / price.toFixed(2) * 100;
+                $('#InPercentages').html(InPercentages.toFixed(2) + ' %');
+                var tarrif_id = 0;
+                $("#calcForm").attr('action', "https://oilmaxcapital.com/en/cabinet/createOrder?tarrif_id=" + tarrif_id)
+
+            }
+        }
+
+
+    </script>
+  </div>
+ </div>
+ </section>
+ <section class="step-body">
+        <div class="step-content">
+            <div class="info">
+                <p>Easy steps to start investing</p>
+            </div>
+            <div class="list">
+                <div class="list-item ico1">
+                    <div class="ico-num">01</div>
+                    <div class="text">
+                        <h2>Sign Up</h2>
+                        <p>To register you should fill in all fields in the registration form and confirm your e-mail.</p>
+                    </div>
+                </div>
+                <div class="list-item ico2">
+                    <div class="ico-num">02</div>
+                    <div class="text">
+                        <h2>Choose appropriate investment plan</h2>
+                        <p>Indicate the investment amount in the "Order" section of your personal account and select the period of
+                            investment.</p>
+                    </div>
+                </div>
+                <div class="list-item ico3">
+                    <div class="ico-num">03</div>
+                    <div class="text">
+                        <h2>Receive Detailed statistics</h2>
+                        <p>The referral statistics page will display the user who registered using your referral link.</p>
+                    </div>
+                </div>
+                <div class="list-item ico4">
+                    <div class="ico-num">04</div>
+                    <div class="text">
+                        <h2>Collect your income</h2>
+                        <p>After purchasing an investment plan by your referral, you will be credited with bonuses in accordance with the referral
+                            program.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+<section class="reviews-slider">
+        <div class="title">
+            <h2>
+                <span>Customer</span> Reviews            </h2>
+        </div>
+        <div class="reviews-slick ">
+                            <div>
+                    <div class="reviews-item">
+                        <p>The site design is ok, but the main thing is that payments are made regularly and on time. It’s convenient and simple to
+                            monitor investment packages.
+                        </p>
+                        <span>zycyrri*******oud.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews-item">
+                        <p>A simple and reliable service that provides a real way to invest in oil. Nice support, responds quickly to any question.
+                        </p>
+                        <span>dejell********il.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews-item">
+                        <p>Convenient site. I mastered this site quickly and easily, there was no problem with service. Only a good impression.
+                        </p>
+                        <span>anavoz*********il.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews-item">
+                        <p>This site opens up an opportunity to invest and make a profit. I keep the site as a bookmark and constantly monitor my own
+                            investment packages. Everything is simple and clear,so far, I like everything.
+
+                        </p>
+                        <span>edodud**********il.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews-item">
+                        <p>
+                            I have been using the site services for about a month. Everything is completely clear and understandable. It is a real
+                            opportunity of getting profit from your investment.
+                        </p>
+                        <span>otuqommu*******oud.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews-item">
+                        <p>
+                            I invested in a small package and everything was okay. Profit is withdrawn every day. The site is simple and worthy of
+                            note.
+                            You can easily found all the valuable information.
+                        </p>
+                        <span>elajaro********ail.com</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="reviews-item">
+                        <p>
+                            In fact, I can emphasize the 3 pluses for me of working with this site . The first is passive earnings. Just a couple of
+                            clicks and I’ve already invested in oil. And after a day, you can already withdraw your income. The second plus is the
+                            availability and ease of use. If you have a question, the support quickly answers and helps to understand. Third plus -
+                            the
+                            ability to quickly withdraw.
+                        </p>
+                        <span>ajakelu********il.com</span>
+                    </div>
+                   </div>                        
+                </div>
+        
+    </section>
+
+
+
+
+
+

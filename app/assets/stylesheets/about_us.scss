@@ -1,3 +1,295 @@
-// Place all the styles related to the about-us controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+
+body.bg-about {
+    background-color: #202022;
+    background-image: url('about.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+}
+body{
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #202022;
+}
+
+.main-body {
+    width: calc(100% - 30px);
+    max-width: 1270px;
+    min-height: calc(100vh - 297px);
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+
+
+.page-title h1 {
+    margin-bottom: 30px;
+    color: #e0bd89;
+    font-size: 64px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 800;
+}
+
+.page-title {
+    padding: 175px 0;
+}
+
+
+.main-body {
+    width: calc(100% - 30px);
+    max-width: 1270px;
+    min-height: calc(100vh - 297px);
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+
+.about-text1 {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 115px;
+}
+
+
+
+.about-text1>div.img {
+    padding-right: 100px;
+}
+.about-text1>div {
+
+    flex: 0 1 50%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.about-text1>div.text h2 {
+    margin-bottom: 45px;
+    color: #fff;
+    font-size: 56px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+}
+
+.about-text1>div.text p {
+    padding-bottom: 20px;
+    color: #878793;
+    font-size: 20px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about-text2 {
+    max-width: 790px;
+    padding: 5px 80px;
+    margin: 0 auto 115px auto;
+    position: relative;
+    text-align: center;
+}
+
+.about-text2::before {
+    left: 0;
+    top: 0;
+}
+
+.about-text2 p {
+    color: #878793;
+    font-size: 28px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    line-height: 42px;
+}
+
+.about-text2::after {
+    right: 0;
+    bottom: 0;
+    -webkit-transform: rotate(
+180deg
+);
+    transform: rotate(
+180deg
+);
+}
+
+
+.about-text2:after, .about-text2:before {
+    content: '';
+    width: 47px;
+    height: 33px;
+    display: block;
+    background-image: url('icon1.svg');
+    position: absolute;
+}
+
+.about-text3 {
+   
+    display: flex;
+
+    margin-bottom: 115px;
+}
+
+.about-text3>div {
+    
+    flex: 0 1 50%;
+}
+
+.about-text3>div.text h2 {
+    margin-bottom: 45px;
+    color: #fff;
+    font-size: 56px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+}
+
+.about-text3>div.img {
+    padding-left: 100px;
+}
+
+.questionForm-body {
+  
+    display: flex;
+    padding: 55px 105px;
+    margin-bottom: 150px;
+    border-radius: 16px;
+    background: #27272b;
+}
+
+
+.questionForm-body>div.text {
+   
+    flex: 0 1 50%;
+    position: relative;
+}
+
+.questionForm-body>div.text:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-image: url('plane_mail.svg');
+    background-repeat: no-repeat;
+    background-position: 100% -20px;
+    position: absolute;
+    left: 0;
+    top: -110px;
+}
+
+.questionForm-body>div.text h3 {
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 40px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.questionForm-body>div.text p {
+    max-width: 335px;
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.questionForm-body>div.form {
+
+    flex: 0 1 50%;
+}
+
+.questionForm-body>div.form>form>div.field {
+    margin-bottom: 24px;
+}
+
+.questionForm-body>div.form>form>div.field input {
+    width: 100%;
+    height: 64px;
+    padding: 0 24px;
+    border-radius: 60px;
+    border: 1px solid #e0bd89;
+    background: 0 0;
+    color: #d5d5d5;
+    font-size: 16px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
+
+.questionForm-body>div.form>form>div.field input {
+    width: 100%;
+    height: 64px;
+    padding: 0 24px;
+    border-radius: 60px;
+    border: 1px solid #e0bd89;
+    background: 0 0;
+    color: #d5d5d5;
+    font-size: 16px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    outline: none;
+}
+
+
+.questionForm-body>div.form>form>div.field textarea {
+    width: 100%;
+    height: 104px;
+    padding: 20px 24px;
+    border-radius: 16px;
+    border: 1px solid #e0bd89;
+    background: 0 0;
+    color: #d5d5d5;
+    font-size: 16px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+    resize: none;
+    outline: none;
+    
+}
+
+.questionForm-body>div.form>form>div.field-send>div.btn {
+    padding-right: 32px;
+}
+
+.questionForm-body>div.form>form>div.field-send>div.btn button {
+   
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+    height: 64px;
+    padding: 0 32px;
+    border-radius: 90px;
+    background: #e0bd89;
+    color: #202022;
+    font-size: 18px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background .25s linear;
+}
+
+.questionForm-body>div.form>form>div.field-send>div.text {
+    color: #676770;
+    font-size: 12px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
+
+.questionForm-body>div.form>form>div.field-send>div.text {
+    color: #676770;
+    font-size: 12px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 400;
+}
+
+.questionForm-body>div.form>form>div.field-send {
+
+    display: flex;
+  
+    align-items: center;
+}

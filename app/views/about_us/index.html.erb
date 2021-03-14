@@ -1,2 +1,105 @@
-<h1>AboutUs#index</h1>
-<p>Find me in app/views/about_us/index.html.erb</p>
+  <%= stylesheet_link_tag 'about_us' %>
+
+
+
+<body class="bg-about">
+    
+
+    <main class="main-body">
+        <div class="page-title">
+            <h1>About company</h1>
+            
+        </div>
+
+        <div class="about-text1">
+            <div class="img"><img src="https://oilmaxcapital.com/skin/img/about1.png" alt=""></div>
+            <div class="text">
+                <h2>Who are we?</h2>
+                                    <p>
+                        We are a group of professional brokers, who specialise on the trading of futures contracts on exchanges. In January 2020, an
+                        interesting situation developed in the world of oil market from our point of view. The essence of this situation was that the
+                        oil
+                        price dropped to negative values. In this regard, it was decided to purchase a significant amount of oil of the brand BRENT
+                        and WTI,
+                        which was done. We spent our personal funds and funds obtained from the purchase of oil on transportation to ports and on
+                        paying for
+                        loading and storing oil directly in the holds of tankers. Our decision was correct. It was decided not to sell oil right away,
+                        but to
+                        hold it until prices recover. We sold part of the oil to pay for storage services on tankers, but we decided to keep the bulk
+                        of it
+                        for a long time.
+                    </p>
+                    <p>
+                        Today, we invite anyone to become our partner, make money on the sale of oil by investing even small funds and making a decent
+                        profit from investments in oil storage on tankers chartered by us. You can purchase an investment storage package for
+                        different amounts of oil, for a period of 2 months or more. For the convenience of work and to reduce overhead costs, we use a
+                        cryptocurrency form of calculation and payment. You buy the package you are interested in, for the period that suits you best,
+                        and pay for it from your personal account. We record this payment in the system and every day you can receive dividends from
+                        the invested amount.
+                    </p>
+                            </div>
+        </div>
+
+        <div class="about-text2">
+                            <p>
+                    By investing through our company, you get the maximum profit. This became possible for several reasons. Firstly, we optimized
+                    trading
+                    operations as much as possible, and secondly, we created a system that allows you to invest without intermediaries, unnecessary
+                    formalities such as agreements with brokers, verification, and other not productive formalities.
+                </p>
+                    </div>
+
+        <div class="about-text3">
+            <div class="text">
+                <h2>Our <span> technologies </span></h2>
+                
+            </div>
+            <div class="img"><img src="https://oilmaxcapital.com/skin/img/about2.png" alt=""></div>
+        </div>
+
+        <div class="questionForm-body">
+            <div class="text">
+    <h3>
+        Got a <span> question?</span>    </h3>
+    <p>
+        If you have any questions or have suggestions for the work of the service, leave a request and we will contact you    </p>
+</div>
+<div class="form">
+    <form id="questionForm" action="https://oilmaxcapital.com/en/questionForm" method="post">
+        <div id="successQuestionForm" style="color:green;font-size: 20px; padding-bottom: 15px"></div>
+        <input type="hidden" name="_token" value="WHUO3TmvEBFRAqHEUbSuBshva76mm5lYOXLAADjs">
+        <div class="field"><input id="nameQuestionForm" name="name" required="" type="text" placeholder="Name"></div>
+        <div class="field"><input name="email" id="emailQuestionForm" required="" type="email" placeholder="E-mail"></div>
+        <div class="field"><textarea name="text" required="" id="textQuestionForm" cols="30" rows="10" placeholder="Comment"></textarea></div>
+        <div class="field-send">
+            <div class="btn">
+                <button><span>Send</span></button>
+            </div>
+            <div class="text">By clicking on the "Submit" button, you consent to the processing of personal data</div>
+        </div>
+    </form>
+</div>
+
+
+<script>
+    $(function () {
+        $('#questionForm').submit(function (e) {
+            e.preventDefault();
+            $.ajax({
+                url: $(this).attr('action'),
+                type: "POST",
+                dataType: "json",
+                data: $(this).serialize(),
+                success: function (data) {
+                    if (data.status == 'ok') {
+                        $('#successQuestionForm').html("<p>Thanks! Your message has been sent</p>");
+                        $('#nameQuestionForm, #emailQuestionForm, #textQuestionForm').val('')
+                    }
+                }
+            });
+        })
+    });
+</script>
+        </div>
+    </main>
+</body>

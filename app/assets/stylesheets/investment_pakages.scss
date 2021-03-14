@@ -1,3 +1,110 @@
-// Place all the styles related to the investment-pakages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+body.bg-package {
+    background-color: #202022;
+    background-image: url('package.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+    background-size: contain;
+}
+body, html {
+    overflow-x: hidden;
+    min-height: 100vh;
+    background: #202022;
+}
+body {
+    line-height: 1;
+}
+.page-title {
+    padding: 175px 0;
+}
+
+.main-body {
+    width: calc(100% - 30px);
+    max-width: 1270px;
+    min-height: calc(100vh - 297px);
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.page-title {
+    padding: 175px 0;
+}
+
+.page-title h1 {
+    margin-bottom: 30px;
+    color: #e0bd89;
+    font-size: 64px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 800;
+}
+
+.package-content {
+    margin-bottom: 190px;
+}
+
+.tabs {
+
+    display: flex;
+    padding: 16px 8px;
+    margin-bottom: 65px;
+    background: rgba(70,70,78,.6);
+    border-radius: 18px;
+}
+
+.tabs li {
+
+    flex: 0 1 33.33333333%;
+    padding: 0 8px;
+		list-style: none;
+}
+
+.package-list {
+ 
+    display: flex;
+  
+    flex-wrap: wrap;
+}
+
+.package-item {
+
+    flex: 0 1 25%;
+    padding: 0 8px 55px 8px;
+}
+
+.package-info {
+    width: 100%;
+    padding-top: 55px;
+    background-color: rgba(88,88,100,.3);
+    background-image: url('p-bg.png');
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    border-radius: 16px;
+    position: relative;
+}
+
+.tabs li.current a {
+    background: #e0bd89;
+    color: #202022;
+}
+.tabs li a {
+ 
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 56px;
+    padding: 10px;
+    background: #585864;
+    border-radius: 12px;
+    color: #878793;
+    font-size: 18px;
+    font-family: Montserrat,sans-serif;
+    font-weight: 600;
+
+    transition: background .25s linear;
+}
+
+a, a:active, a:active:hover, a:focus, a:focus:hover, a:hover, a:visited, a:visited:hover, li {
+    text-decoration: none;
+    outline: 0;
+}
